@@ -14,7 +14,8 @@ namespace Alchemy.Editor.Elements
 
             var foldout = new Foldout()
             {
-                text = label
+                text = label,
+                value = false,
             };
             Add(foldout);
             foldout.Q<Label>().style.unityFontStyleAndWeight = FontStyle.Bold;
